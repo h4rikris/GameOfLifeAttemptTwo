@@ -10,4 +10,8 @@ public class Cell {
     public boolean isAlive() {
         return state;
     }
+
+    public void toggle() {
+        state = state ? false : true;
+    }
 }
