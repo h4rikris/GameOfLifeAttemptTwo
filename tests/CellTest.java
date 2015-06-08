@@ -32,4 +32,14 @@ public class CellTest {
 
         assertEquals(false, cellstate);
     }
+
+    @Test
+    public void testForCellStateToggleFromDeadToAlive() {
+        Cell cell = new Cell(false);
+
+        cell.toggle();
+        boolean cellstate = cell.isAlive();
+
+        assertEquals(true, cellstate);
+    }
 }
